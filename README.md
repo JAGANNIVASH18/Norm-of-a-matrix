@@ -31,10 +31,9 @@ print(Norm_of_matrix)
 
 import numpy as np
 mat = np.array(eval(input()))
-ans = np.linalg.norm(mat,1)
+ans = np.linalg.norm(mat,2)
 Norm_of_matrix = "{:.2f}".format(ans)
 print(Norm_of_matrix)
-
 
 
 
@@ -42,9 +41,8 @@ print(Norm_of_matrix)
 
 import numpy as np
 mat = np.array(eval(input()))
-ans = np.linalg.norm(mat,1)
-Norm_of_matrix = "{:.2f}".format(ans)
-print(Norm_of_matrix)
+ans = np.linalg.norm(mat,np.inf)
+print("{:.2f}".format(ans))
 ```
 
 
